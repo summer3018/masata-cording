@@ -22,6 +22,7 @@ li {
 
 .header {
   position: fixed;
+  width: 100%;
 }
 
 .header-menu__inner {
@@ -187,7 +188,13 @@ li {
 .fv {
   height: 688.669px;
   flex-shrink: 0;
-  background: url(/image/fv-bg1.jpg) no-repeat center center/cover;
+  background: url(/image/sp/fv-bg1.jpg) no-repeat center center/cover;
+}
+@media screen and (min-width: 768px) {
+  .fv {
+    background: url(/image/pc/FV-bg.jpg) no-repeat center center/cover;
+    height: 100vh;
+  }
 }
 
 .fv__inner {
