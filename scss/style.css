@@ -224,12 +224,36 @@ li {
   letter-spacing: 1.5px;
   text-align: center;
 }
+@media screen and (min-width: 768px) {
+  .fv-title {
+    font-size: 42px;
+    font-weight: 500;
+    line-height: 66px;
+    letter-spacing: 2.1px;
+  }
+}
 .fv-title span:nth-of-type(1) {
   color: #F14E53;
   font-size: 38px;
+  line-height: 42px; /* 110.526% */
+  letter-spacing: 1.9px;
+}
+@media screen and (min-width: 768px) {
+  .fv-title span:nth-of-type(1) {
+    font-size: 60px;
+    line-height: 66px; /* 110% */
+    letter-spacing: 3px;
+  }
 }
 .fv-title span:nth-of-type(2) {
   color: #3FA9F5;
   font-size: 38px;
+}
+@media screen and (min-width: 768px) {
+  .fv-title span:nth-of-type(2) {
+    font-size: 60px;
+    line-height: 66px; /* 110% */
+    letter-spacing: 3px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

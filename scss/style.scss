@@ -236,13 +236,33 @@ li {
     line-height: 42px;
     letter-spacing: 1.5px;
     text-align: center;
+
+    @include mq(md) {
+      font-size: 42px;
+      font-weight: 500;
+      line-height: 66px;
+      letter-spacing: 2.1px;
+    }
     span:nth-of-type(1) {
       color: #F14E53; // 1つ目の「挑」
       font-size: 38px;
+      line-height: 42px; /* 110.526% */
+      letter-spacing: 1.9px;
+      @include mq(md) {
+        font-size: 60px;
+        line-height: 66px; /* 110% */
+        letter-spacing: 3px;
+      }
     }
   
     span:nth-of-type(2) {
       color: #3FA9F5; // 2つ目の「自」
       font-size: 38px;
+
+      @include mq(md) {
+        font-size: 60px;
+        line-height: 66px; /* 110% */
+        letter-spacing: 3px;
+      }
     }
   }
