@@ -331,4 +331,8 @@ li {
   height: 320px;
   flex-shrink: 0;
 }
+
+.service-item img {
+  max-width: 345px;
+}
 /*# sourceMappingURL=style.css.map */
