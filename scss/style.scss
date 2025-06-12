@@ -294,20 +294,46 @@ li {
 .about{
 
 }
+.about__inner{
+  @include mq(md) {
+    max-width: 1030px;
+    margin-inline: auto; // 中央に寄せる
+    padding-inline: 16px; // 余白はpaddingで制御（レスポンシブ対応しやすい）
+  }
+}
 .about-title{
 
 }
 .about-sub-title{
 
 }
+.about__container{
+  @include mq(md) {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+  }
+}
 .about__text-wrpper{
 
 }
 .about-text{
-
+  margin-top: 26px;
+  color: #141414;
+  font-family: "Noto Sans JP";
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 38px; /* 190% */
+  letter-spacing: 1px;
 }
 .about-subtext{
-
+  margin-top: 26px;
+  color: #141414;
+  font-family: "Noto Sans JP";
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 30px; /* 214.286% */
+  letter-spacing: 0.7px;
 }
 .about__image{
   display: none;
@@ -320,6 +346,8 @@ li {
     
   }
   img{
-
+    width: 460px;
+    height: 320px;
+    flex-shrink: 0;
   }
 }
