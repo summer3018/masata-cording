@@ -266,3 +266,60 @@ li {
       }
     }
   }
+
+// section(共通)
+.section{
+
+}
+.section__inner{
+  margin: 100px 15px;
+}
+.section-title{
+  color: #141414;
+  font-family: Roboto;
+  font-size: 36px;
+  font-weight: 500;
+  letter-spacing: 1.8px;
+}
+.section-subtitle{
+  color: #F14E53;
+  font-family: "Noto Sans JP";
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  margin-top: 4px;
+}
+
+  // about
+.about{
+
+}
+.about-title{
+
+}
+.about-sub-title{
+
+}
+.about__text-wrpper{
+
+}
+.about-text{
+
+}
+.about-subtext{
+
+}
+.about__image{
+  display: none;
+  @include mq(md) {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-width: 600px; // 最大幅を設定
+    max-height: 400px; // 最大高さを設定
+    
+  }
+  img{
+
+  }
+}
