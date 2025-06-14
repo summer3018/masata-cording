@@ -356,17 +356,35 @@ li {
 .service__container{
 
 }
+.service__wapper{
+  @include mq(md) {
+    display: flex;
+    flex-direction: row;
+  }
+}
 .service__body{
 
 }
 .service__body-title{
-
+  // color: #FFF;
+  font-family: "Noto Sans JP";
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 1px;
 }
 .service__body-text{
-  
+  // color: #FFF;
+  font-family: "Noto Sans JP";
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 30px; /* 214.286% */
+  letter-spacing: 0.7px;
 }
 .service-item{
   img{
     max-width: 345px;
   }
+}
+.bg-red{
+  background: #F14E53;
 }
