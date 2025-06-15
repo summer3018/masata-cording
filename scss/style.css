@@ -373,6 +373,7 @@ li {
 
 .service-item img {
   max-width: 345px;
+  display: block;
 }
 
 .bg-red {
